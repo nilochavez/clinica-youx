@@ -1,0 +1,31 @@
+/* Estilo para o controle da legenda */
+.info {
+    padding: 6px 8px; /* Espaçamento interno */
+    font: 14px/16px Arial, Helvetica, sans-serif; /* Fonte e tamanho do texto */
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: auto; /* Ajusta a largura conforme o conteúdo */
+}
+
+/* Estilo para o título da legenda */
+.info h4 {
+    margin: 0 0 5px; /* Margem inferior para espaçar do conteúdo */
+    color: #333; /* Cor do texto do título */
+    font-size: 16px; /* Tamanho do texto do título */
+}
+
+/* Estilo para os itens da legenda */
+.info i {
+    width: 18px; /* Tamanho do ícone */
+    height: 18px; /* Tamanho do ícone */
+    float: left; /* Alinha o ícone à esquerda */
+    margin-right: 8px; /* Espaçamento à direita do ícone */
+    opacity: 0.7; /* Opacidade para uma aparência sutil */
+}
+
+/* Estilo para o texto da legenda */
+.info div {
+    line-height: 18px; /* Espaçamento entre linhas */
+    color: #555; /* Cor do texto das faixas */
+}

@@ -1,0 +1,70 @@
+
+<div class="container">
+  <h2>Cadastro de Paciente</h2>
+
+  <form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input id="nome" formControlName="nome" class="form-control" />
+      <div *ngIf="patientForm.controls['nome'].invalid && patientForm.controls['nome'].touched" class="error">
+        Nome é obrigatório.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="cpf">CPF:</label>
+      <input id="cpf" formControlName="cpf" class="form-control" />
+      <div *ngIf="patientForm.controls['cpf'].invalid && patientForm.controls['cpf'].touched" class="error">
+        CPF é obrigatório e deve ter 11 dígitos.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input id="dataNascimento" formControlName="dataNascimento" type="date" class="form-control" />
+      <div *ngIf="patientForm.controls['dataNascimento'].invalid && patientForm.controls['dataNascimento'].touched" class="error">
+        Data de nascimento é obrigatória.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="peso">Peso (em Kg):</label>
+      <input id="peso" formControlName="peso" type="number" class="form-control" />
+      <div *ngIf="patientForm.controls['peso'].invalid && patientForm.controls['peso'].touched" class="error">
+        Peso é obrigatório e deve ser um número positivo.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="altura">Altura (em metros):</label>
+      <input id="altura" formControlName="altura" type="number" step="0.01" class="form-control" />
+      <div *ngIf="patientForm.controls['altura'].invalid && patientForm.controls['altura'].touched" class="error">
+        Altura é obrigatória e deve ser um número positivo.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="uf">UF:</label>
+      <select id="uf" formControlName="uf" class="form-control">
+        <option value="" disabled>Selecione um estado</option>
+        <option *ngFor="let state of states" [value]="state.sigla">{{ state.nome }}</option>
+      </select>
+      <div *ngIf="patientForm.controls['uf'].invalid && patientForm.controls['uf'].touched" class="error">
+        UF é obrigatório.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="isLoading" (click)="onSubmit()">Cadastrar</button>
+    <button type="button" class="btn btn-primary" [disabled]="isLoading" (click)="voltar()">Voltar</button>
+
+  </form>
+   <!-- Exibe a mensagem de sucesso -->
+   <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>
+
+

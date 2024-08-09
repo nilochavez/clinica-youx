@@ -1,0 +1,95 @@
+/* Contêiner da Tabela */
+.table-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 50px;
+    padding-left: 100px;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo dos Botões */
+::ng-deep .button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+::ng-deep .button.edit {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+::ng-deep .button.delete {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+}
+
+::ng-deep .button.edit:hover {
+    background-color: #45a049;
+}
+
+::ng-deep .button.delete:hover {
+    background-color: #e53935;
+}
+
+
+
+/* Estilo do Container dos Botões */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-bottom: 5px; /* Espaçamento abaixo dos botões */
+  }
+  
+  /* Estilo dos Botões */
+  .button {
+    padding: 8px 12px;
+    margin: 0 5px; /* Espaçamento entre os botões */
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #4CAF50; /* Verde padrão */
+    color: white;
+  }
+  
+  .button.create {
+    background-color: #4CAF50; /* Verde */
+  }
+  .button.create.nurse {
+    background-color: #4c7faf; /* Verde */
+  }
+
+
+  

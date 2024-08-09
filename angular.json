@@ -25,6 +25,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/leaflet/dist/leaflet.css",
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/app/mapa/mapa.component.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -84,6 +87,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -91,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "bc2cc38d-f8fa-4650-8c34-1a4029e7b812"
   }
 }

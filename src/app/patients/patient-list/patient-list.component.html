@@ -1,0 +1,42 @@
+
+<app-mapa></app-mapa>
+
+
+ 
+  
+
+<div class="table-container">
+    <div class="button-container">
+        <button *ngIf="canManagePatients" class="button create" (click)="addPatient()">Cadastrar Paciente</button>
+        <button *ngIf="canManagePatients && isAdmin" class="button create nurse" (click)="addNurse()">Gerenciar Enfermeiro</button>
+      </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Peso</th>
+          <th>Altura</th>
+          <th>Data de Nascimento</th>
+          <th>UF</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td>{{ patient.nome }}</td>
+          <td>{{ patient.cpf }}</td>
+          <td>{{ patient.peso }}</td>
+          <td>{{ patient.altura }}</td>
+          <td>{{ patient.dataNascimento }}</td>
+          <td>{{ patient.uf }}</td>
+          <td *ngIf="canManagePatients && canManageNurses">
+            <button class="button edit" (click)="editPatient()">Editar</button>
+            <button class="button delete" (click)="deletePatient(patient.id)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  
