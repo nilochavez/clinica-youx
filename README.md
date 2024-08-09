@@ -4,7 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Node v20.16.0
 
 ## Development server
+Instalar as dependencias 
+npm install 
 
+É nessario rodar o backend antes de subir a aplicação.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 
