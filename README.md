@@ -7,7 +7,8 @@ Node v20.16.0
 Instalar as dependencias 
 npm install 
 
-É nessario rodar o backend antes de subir a aplicação.
+É nessario rodar o backend antes de subir a aplicação. <br>
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 
