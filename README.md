@@ -5,6 +5,8 @@ Node v20.16.0
 
 ## Development server
 Instalar as dependencias 
+
+***Para testar localmente usar a branch master***.
 npm install 
 
 É nessario rodar o backend antes de subir a aplicação. <br>
