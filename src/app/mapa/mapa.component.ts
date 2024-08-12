@@ -44,7 +44,7 @@ export class MapaComponent implements OnInit {
   }
 
   private loadPatientData(): void {
-    this.http.get<any>('https://clinica-youx-backend.onrender.com/pacientes').subscribe(data => {
+    this.http.get<any>('http://localhost:8080/pacientes').subscribe(data => {
       this.groupedData = this.groupDataByUF(data.content);
       this.colorizeMap();
     });

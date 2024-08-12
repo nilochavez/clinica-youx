@@ -27,7 +27,7 @@ export class PatientListComponent  {
   patients: any[] = [];
   isAdmin: boolean = false;
   userRole: any = {};
-  private apiUrl = 'https://clinica-youx-backend.onrender.com/pacientes';
+  private apiUrl = 'http://localhost:8080/pacientes';
   constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
@@ -51,7 +51,7 @@ export class PatientListComponent  {
   
 
 fetchPatients(): void {
-  this.http.get('https://clinica-youx-backend.onrender.com/pacientes').subscribe((response: any) => {
+  this.http.get('http://localhost:8080/pacientes').subscribe((response: any) => {
     this.patients = response.content;
   });
 }
