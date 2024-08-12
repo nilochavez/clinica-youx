@@ -21,7 +21,7 @@ export class LoginComponent {
   }
 
   onLogin() {
-    this.http.post('http://localhost:8080/login', this.loginObj).subscribe(
+    this.http.post('https://clinica-youx-backend.onrender.com/login', this.loginObj).subscribe(
       (res: any) => {
         if (res.token) {
           alert("Login Success");
