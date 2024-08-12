@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Node v20.16.0
 
 ## Development server
+**Usar a branch master para executar localmente**
+
 Instalar as dependencias 
 npm install 
 
